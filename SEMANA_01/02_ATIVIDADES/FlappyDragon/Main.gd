@@ -55,7 +55,7 @@ func _process(delta):
 		# se apertou enter ou space, recomeça o jogo
 		if Input.is_action_pressed("ui_accept"):
 			$score.set_text("0") # zera o score
-			vscore = 0 # zera o score
+			vscore = 10 # zera o score
 			status = 1 # muda o status para "jogando"
 			$dragon/dragonImages.playing = true # faz dragão voltar a bater as asas
 			$dragon.position.y = 0 # volta o dragão para a posição original
