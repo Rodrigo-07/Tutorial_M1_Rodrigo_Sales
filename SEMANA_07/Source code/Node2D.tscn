@@ -1,0 +1,415 @@
+[gd_scene load_steps=67 format=2]
+
+[ext_resource path="res://Player1.gd" type="Script" id=1]
+[ext_resource path="res://sprites/personagem.png" type="Texture" id=2]
+[ext_resource path="res://sprites/industrial.v1.png" type="Texture" id=3]
+[ext_resource path="res://sprites/personagem_invertido.png" type="Texture" id=4]
+[ext_resource path="res://Player2.gd" type="Script" id=5]
+[ext_resource path="res://tile_invertido.tres" type="TileSet" id=6]
+[ext_resource path="res://Node2D.gd" type="Script" id=7]
+[ext_resource path="res://sprites/portal sprites/Normal/portal11.png" type="Texture" id=8]
+[ext_resource path="res://sprites/background_invertedt-export.png" type="Texture" id=9]
+[ext_resource path="res://sprites/crystal_bottom_left.png" type="Texture" id=10]
+[ext_resource path="res://sprites/crystal_bottom_right.png" type="Texture" id=11]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal12.png" type="Texture" id=12]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal5.png" type="Texture" id=13]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal6.png" type="Texture" id=14]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal4.png" type="Texture" id=15]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal8.png" type="Texture" id=16]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal7.png" type="Texture" id=17]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal9.png" type="Texture" id=18]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal10.png" type="Texture" id=19]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal11.png" type="Texture" id=20]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal2.png" type="Texture" id=21]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal3.png" type="Texture" id=22]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal1.png" type="Texture" id=23]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal18.png" type="Texture" id=24]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal16.png" type="Texture" id=25]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal17.png" type="Texture" id=26]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal14.png" type="Texture" id=27]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal19.png" type="Texture" id=28]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal15.png" type="Texture" id=29]
+[ext_resource path="res://sprites/portal sprites/Inverted/portal13.png" type="Texture" id=30]
+[ext_resource path="res://sprites/portal sprites/Normal/portal12.png" type="Texture" id=31]
+[ext_resource path="res://sprites/portal sprites/Normal/portal10.png" type="Texture" id=32]
+[ext_resource path="res://sprites/portal sprites/Normal/portal13.png" type="Texture" id=33]
+[ext_resource path="res://sprites/portal sprites/Normal/portal15.png" type="Texture" id=34]
+[ext_resource path="res://sprites/portal sprites/Normal/portal19.png" type="Texture" id=35]
+[ext_resource path="res://sprites/portal sprites/Normal/portal14.png" type="Texture" id=36]
+[ext_resource path="res://sprites/portal sprites/Normal/portal17.png" type="Texture" id=37]
+[ext_resource path="res://sprites/portal sprites/Normal/portal16.png" type="Texture" id=38]
+[ext_resource path="res://sprites/portal sprites/Normal/portal18.png" type="Texture" id=39]
+[ext_resource path="res://sprites/portal sprites/Normal/portal7.png" type="Texture" id=40]
+[ext_resource path="res://sprites/portal sprites/Normal/portal5.png" type="Texture" id=41]
+[ext_resource path="res://sprites/portal sprites/Normal/portal2.png" type="Texture" id=42]
+[ext_resource path="res://sprites/portal sprites/Normal/portal8.png" type="Texture" id=43]
+[ext_resource path="res://sprites/portal sprites/Normal/portal4.png" type="Texture" id=44]
+[ext_resource path="res://sprites/portal sprites/Normal/portal9.png" type="Texture" id=45]
+[ext_resource path="res://sprites/portal sprites/Normal/portal3.png" type="Texture" id=46]
+[ext_resource path="res://sprites/portal sprites/Normal/portal6.png" type="Texture" id=47]
+[ext_resource path="res://sprites/crystal_top_left.png" type="Texture" id=48]
+[ext_resource path="res://sprites/crystal_top_right.png" type="Texture" id=49]
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 65, 20, 0, 20, 0, 0, 65, 0 )
+
+[sub_resource type="StreamTexture" id=14]
+
+[sub_resource type="StreamTexture" id=15]
+flags = 4
+
+[sub_resource type="StreamTexture" id=16]
+flags = 4
+
+[sub_resource type="TileSet" id=1]
+0/name = "industrial.v1.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 191, 0, 65, 20 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 11 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "background.jpg 1"
+1/texture = SubResource( 14 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 704, 352 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "background.png 2"
+2/texture = SubResource( 15 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 3840, 2240 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "background_invertedt.png 3"
+3/texture = SubResource( 16 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 960, 576 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "background_invertedt-export.png 4"
+4/texture = ExtResource( 9 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 704, 416 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 6, 8.5 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "andando_direita"
+length = 2.15
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+}
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 6, 7.5 )
+
+[sub_resource type="Animation" id=10]
+resource_name = "andando_invertido"
+length = 2.15
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 2, 3, 0, 4, 5, 6, 7 ]
+}
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ ExtResource( 23 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 24 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 16, 13.5 )
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 42 ), ExtResource( 46 ), ExtResource( 44 ), ExtResource( 41 ), ExtResource( 47 ), ExtResource( 40 ), ExtResource( 43 ), ExtResource( 45 ), ExtResource( 32 ), ExtResource( 8 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 21.5, 19.75 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 5.86967, 9 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 7.08337, 8.93753 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 6.375, 8.8125 )
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 8.4375, 9.875 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 2, 0 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 301.0, 545.0 ],
+"_edit_vertical_guides_": [ 288.0 ]
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 58.0
+margin_top = -102.0
+margin_right = 98.0
+margin_bottom = -62.0
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 362, 149 )
+scale = Vector2( 1.00833, 0.838889 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="invertido" type="TileMap" parent="."]
+position = Vector2( -13, 272 )
+tile_set = ExtResource( 6 )
+cell_size = Vector2( 54, 19 )
+cell_quadrant_size = 9
+show_collision = true
+format = 1
+tile_data = PoolIntArray( -1245196, 4, 0, -1310720, 4, 0, -1310707, 4, 0, -1310694, 4, 0, -1310681, 4, 0, -1310668, 4, 0, -1310656, 4, 0, -851968, 0, 0, -851967, 0, 0, -851966, 0, 0, -851965, 0, 0, -851964, 0, 0, -851963, 0, 0, -851962, 0, 0, -851961, 0, 0, -851960, 0, 0, -851959, 0, 0, -851958, 0, 0, -851937, 0, 0, -851936, 0, 0, -720897, 0, 0, -786423, 0, 0, -786421, 0, 0, -786420, 0, 0, -786419, 0, 0, -786418, 0, 0, -786415, 0, 0, -786414, 0, 0, -786413, 0, 0, -786412, 0, 0, -786411, 0, 0, -786402, 0, 0, -786401, 0, 0, -786400, 0, 0, -786399, 0, 0, -786396, 0, 0, -655361, 0, 0, -720882, 0, 0, -720881, 0, 0, -720880, 0, 0, -720879, 0, 0, -720875, 0, 0, -720874, 0, 0, -720873, 0, 0, -720872, 0, 0, -720871, 0, 0, -720870, 0, 0, -720869, 0, 0, -720868, 0, 0, -720867, 0, 0, -720866, 0, 0, -720863, 0, 0, -720862, 0, 0, -720860, 0, 0, -720859, 0, 0, -720856, 0, 0, -720855, 0, 0, -720854, 0, 0, -720853, 0, 0, -720852, 0, 0, -589825, 0, 0, -655350, 0, 0, -655332, 0, 0, -655322, 0, 0, -655321, 0, 0, -655320, 0, 0, -524289, 0, 0, -589818, 0, 0, -589816, 0, 0, -589809, 0, 0, -589801, 0, 0, -589799, 0, 0, -589796, 0, 0, -589791, 0, 0, -458753, 0, 0, -524271, 0, 0, -524269, 0, 0, -524260, 0, 0, -524257, 0, 0, -393217, 0, 0, -458745, 0, 0, -458726, 0, 0, -393194, 0, 0, -393192, 0, 0, -393187, 0, 0, -327653, 0, 0, -262121, 0, 0 )
+
+[node name="normal" type="TileMap" parent="."]
+position = Vector2( -13, 272 )
+tile_set = SubResource( 1 )
+cell_size = Vector2( 65, 20 )
+show_collision = true
+format = 1
+tile_data = PoolIntArray( 65547, 1, 0, 65557, 1, 0, 196598, 4, 0, 131072, 4, 0, 131082, 4, 0, 131092, 4, 0, 131093, 4, 0, 131103, 4, 0, 131113, 4, 0, 131114, 4, 0, 131124, 4, 0, 393223, 0, 0, 393233, 0, 0, 393235, 0, 0, 524296, 0, 0, 524306, 0, 0, 524309, 0, 0, 589828, 0, 0, 589839, 0, 0, 655361, 0, 0, 655367, 0, 0, 655377, 0, 0, 720897, 0, 0, 720901, 0, 0, 720909, 0, 0, 720915, 0, 0, 786433, 0, 0, 786440, 0, 0, 786450, 0, 0, 786451, 0, 0, 786452, 0, 0, 786453, 0, 0, 786454, 0, 0, 786455, 0, 0, 786456, 0, 0, 851969, 0, 0, 851984, 0, 0, 851985, 0, 0, 851986, 0, 0, 851992, 0, 0, 851993, 0, 0, 917505, 0, 0, 917506, 0, 0, 917511, 0, 0, 917518, 0, 0, 917519, 0, 0, 917520, 0, 0, 917529, 0, 0, 983041, 0, 0, 983042, 0, 0, 983043, 0, 0, 983044, 0, 0, 983045, 0, 0, 983046, 0, 0, 983047, 0, 0, 983048, 0, 0, 983049, 0, 0, 983050, 0, 0, 983051, 0, 0, 983052, 0, 0, 983053, 0, 0, 983054, 0, 0 )
+
+[node name="Player1" type="KinematicBody2D" parent="."]
+position = Vector2( -13, 272 )
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+position = Vector2( 177, 250 )
+rotating = true
+current = true
+zoom = Vector2( 0.4, 0.35 )
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+drag_margin_top = 0.3
+drag_margin_bottom = 0.3
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="Sprite" type="Sprite" parent="Player1"]
+position = Vector2( 171.375, 258.5 )
+scale = Vector2( 1.25, 1.25 )
+texture = ExtResource( 2 )
+hframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player1"]
+position = Vector2( 171, 256 )
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player1"]
+anims/andando_direita = SubResource( 2 )
+
+[node name="Player2" type="KinematicBody2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 5 )
+
+[node name="Camera2D2" type="Camera2D" parent="Player2"]
+position = Vector2( 138, 60 )
+zoom = Vector2( 0.4, 0.35 )
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+drag_margin_top = 0.3
+drag_margin_bottom = 0.3
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="Sprite" type="Sprite" parent="Player2"]
+position = Vector2( 63, 58.125 )
+scale = Vector2( 1.25, 1.25 )
+texture = ExtResource( 4 )
+hframes = 8
+frame = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player2"]
+position = Vector2( 64, 60 )
+shape = SubResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player2"]
+anims/andando_invertido = SubResource( 10 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Area2D"]
+position = Vector2( 289, 422 )
+scale = Vector2( 0.138, 0.126 )
+frames = SubResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 288.5, 425 )
+shape = SubResource( 8 )
+
+[node name="Area2D4" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Area2D4"]
+position = Vector2( 1126, 372 )
+scale = Vector2( 0.083, 0.082697 )
+frames = SubResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( 1127, 373 )
+shape = SubResource( 8 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D2"]
+position = Vector2( 395.5, 197.44 )
+scale = Vector2( 0.134, 0.128606 )
+frames = SubResource( 13 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 394, 200 )
+shape = SubResource( 9 )
+
+[node name="Area2D3" type="Area2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D3"]
+position = Vector2( 1267, 250 )
+scale = Vector2( 0.134, 0.128606 )
+frames = SubResource( 13 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2( 1269, 248 )
+shape = SubResource( 9 )
+
+[node name="Cristal_area_1" type="Area2D" parent="."]
+
+[node name="Cristal1" type="Sprite" parent="Cristal_area_1"]
+position = Vector2( 475, 374 )
+scale = Vector2( 0.0385056, 0.0385056 )
+texture = ExtResource( 10 )
+
+[node name="CollisionShape1" type="CollisionShape2D" parent="Cristal_area_1"]
+position = Vector2( 476, 376 )
+shape = SubResource( 17 )
+
+[node name="Cristal_area_2" type="Area2D" parent="."]
+
+[node name="Cristal2" type="Sprite" parent="Cristal_area_2"]
+position = Vector2( 1040, 150 )
+scale = Vector2( 0.0414969, 0.0414969 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cristal_area_2"]
+position = Vector2( 1037, 151 )
+shape = SubResource( 18 )
+
+[node name="Cristal_area_3" type="Area2D" parent="."]
+
+[node name="Cristal3" type="Sprite" parent="Cristal_area_3"]
+position = Vector2( 1388, 415 )
+scale = Vector2( 0.0418131, 0.0417515 )
+texture = ExtResource( 48 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Cristal_area_3"]
+position = Vector2( 1386, 417 )
+shape = SubResource( 19 )
+
+[node name="Cristal_area_4" type="Area2D" parent="."]
+
+[node name="Cristal4" type="Sprite" parent="Cristal_area_4"]
+position = Vector2( 1715, 74 )
+scale = Vector2( 0.0349414, 0.0349414 )
+texture = ExtResource( 49 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Cristal_area_4"]
+position = Vector2( 1717, 75 )
+shape = SubResource( 20 )
+
+[connection signal="area_shape_entered" from="Area2D" to="Player1" method="_on_Area2D_area_shape_entered"]
+[connection signal="body_entered" from="Area2D" to="Player1" method="_on_Area2D_body_entered"]
+[connection signal="area_shape_entered" from="Area2D4" to="Player1" method="_on_Area2D_area_shape_entered"]
+[connection signal="body_entered" from="Area2D4" to="Player1" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="Player2" method="_on_Area2D2_body_entered"]
+[connection signal="body_entered" from="Area2D3" to="Player2" method="_on_Area2D2_body_entered"]
+[connection signal="body_entered" from="Cristal_area_1" to="." method="_on_Cristal_area_1_body_entered"]
+[connection signal="body_entered" from="Cristal_area_2" to="." method="_on_Cristal_area_2_body_entered"]
+[connection signal="body_entered" from="Cristal_area_3" to="." method="_on_Cristal_area_3_body_entered"]
+[connection signal="body_entered" from="Cristal_area_4" to="." method="_on_Cristal_area_4_body_entered"]

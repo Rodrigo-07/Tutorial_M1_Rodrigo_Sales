@@ -1,0 +1,73 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Dialogo2.gd" type="Script" id=1]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export3.png" type="Texture" id=2]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export1.png" type="Texture" id=3]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export2.png" type="Texture" id=4]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export4.png" type="Texture" id=5]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export8.png" type="Texture" id=6]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export6.png" type="Texture" id=7]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export7.png" type="Texture" id=8]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export5.png" type="Texture" id=9]
+[ext_resource path="res://sprites/chululu/cthulu-bigger-export9.png" type="Texture" id=10]
+[ext_resource path="res://sprites/box_dialogue.png" type="Texture" id=11]
+[ext_resource path="res://upheavtt.ttf" type="DynamicFontData" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 23
+font_data = ExtResource( 13 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1034.0
+margin_bottom = 604.0
+color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 507, 206 )
+scale = Vector2( 0.529052, 0.529052 )
+frames = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 517, 352 )
+scale = Vector2( 1.874, 1 )
+texture = ExtResource( 11 )
+
+[node name="text" type="RichTextLabel" parent="."]
+margin_left = 117.0
+margin_top = 465.0
+margin_right = 915.0
+margin_bottom = 558.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+
+[node name="text2" type="RichTextLabel" parent="."]
+margin_left = 118.0
+margin_top = 426.0
+margin_right = 467.0
+margin_bottom = 456.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+text = "Mestre do  tempo"
+
+[node name="next_char" type="Timer" parent="."]
+
+[node name="next_message" type="Timer" parent="."]
+
+[connection signal="timeout" from="next_char" to="." method="_on_next_char_timeout"]
+[connection signal="timeout" from="next_message" to="." method="_on_next_message_timeout"]
